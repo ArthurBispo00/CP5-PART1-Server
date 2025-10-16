@@ -8,9 +8,8 @@ Este projeto implementa um sistema de comunicação cliente-servidor em Java uti
 
 ## Integrantes do Grupo
 
-* **Nome:Arthur Bispo de Lima RM:557568
-* **Nome: João Paulo Moreira dos Santos RM: 557808
-
+* **Nome:** Arthur Bispo de Lima - **RM:** 557568
+* **Nome:** João Paulo Moreira dos Santos - **RM:** 557808
 
 ---
 
@@ -44,8 +43,6 @@ Primeiro, execute o servidor para que ele comece a aguardar por conexões.
 * **Classe principal:** `br.com.fiap.cp5.server.Servidor`
 * **O que ele faz:** O servidor iniciará e ficará aguardando na porta 9999 por uma conexão do cliente.
 
-**(Opcional: Adicione um print da tela do servidor aguardando a conexão aqui)**
-
 ### 2. Executando o Cliente
 
 Com o servidor rodando, execute o cliente em um novo terminal.
@@ -57,9 +54,13 @@ Com o servidor rodando, execute o cliente em um novo terminal.
 
 ## Exemplo de Execução
 
-Abaixo, um exemplo da comunicação entre o Cliente e o Servidor:
+Abaixo, um exemplo da comunicação entre o Cliente e o Servidor.
 
-**(Adicione aqui um print da sua tela mostrando os dois terminais, lado a lado, com a comunicação funcionando. Isso é muito importante!)**
+**Tela do Servidor recebendo e descriptografando a mensagem enviada pelo Cliente:**
+![Tela do Servidor em Execução](https://raw.githubusercontent.com/ArthurBispo00/CP5-PART1-Server/master/imagem_tela_servidor.png)
+
+**Tela do Cliente enviando a mensagem original e mostrando sua versão criptografada:**
+![Tela do Cliente em Execução](https://raw.githubusercontent.com/ArthurBispo00/CP5-PART1-Server/master/imagem_tela_cliente.png)
 
 ---
 
@@ -70,4 +71,4 @@ Conforme solicitado, foi realizado um teste de validação com o simulador **RSA
 * **Mensagem Original:** FIAP 2025
 * **Mensagem Criptografada (gerada pelo nosso programa):** 185 99 12 207 223 84 250 84 287
 
-**(Adicione aqui um print da tela do simulador da Drexel University mostrando que, com os seus parâmetros N, E e D, a criptografia e descriptografia de um caractere (ex: 'F') bate com o seu resultado. Este print é obrigatório pelo enunciado!)**
+**(Adicione aqui o print da tela do simulador da Drexel University)**
