@@ -2,13 +2,8 @@ package br.com.fiap.cp5.cripto;
 
 import java.math.BigInteger;
 
-/**
- * Classe utilitária para realizar a criptografia e descriptografia RSA.
- * Utiliza BigInteger para conseguir lidar com os números grandes gerados pelo RSA.
- */
 public class CriptografiaRSA {
 
-    // --- NOSSAS CONSTANTES DEFINIDAS NA PLANILHA ---
 
     // N = p * q
     private static final BigInteger N = new BigInteger("323");
@@ -20,15 +15,10 @@ public class CriptografiaRSA {
     private static final BigInteger D = new BigInteger("173");
 
 
-    /**
-     * Criptografa uma mensagem de texto.
-     * @param mensagem A mensagem a ser criptografada.
-     * @return Uma string contendo os números criptografados, separados por espaço.
-     */
     public static String criptografar(String mensagem) {
         StringBuilder mensagemCriptografada = new StringBuilder();
 
-        // Itera sobre cada caractere da mensagem
+
         for (char caractere : mensagem.toCharArray()) {
             // Converte o caractere para seu valor numérico (ASCII)
             int ascii = (int) caractere;
@@ -46,18 +36,13 @@ public class CriptografiaRSA {
         return mensagemCriptografada.toString().trim(); // .trim() remove o espaço extra no final
     }
 
-    /**
-     * Descriptografa uma mensagem.
-     * @param mensagemCriptografada A string de números criptografados, separados por espaço.
-     * @return A mensagem original descriptografada.
-     */
     public static String descriptografar(String mensagemCriptografada) {
         StringBuilder mensagemOriginal = new StringBuilder();
 
-        // Separa a string de entrada em um array de números (baseado nos espaços)
+
         String[] blocosCriptografados = mensagemCriptografada.split(" ");
 
-        // Itera sobre cada número criptografado
+
         for (String bloco : blocosCriptografados) {
             // Transforma a string do número em um BigInteger
             BigInteger c = new BigInteger(bloco);

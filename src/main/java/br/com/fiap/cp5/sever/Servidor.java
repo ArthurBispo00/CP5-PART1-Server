@@ -12,7 +12,6 @@ public class Servidor {
     public static void main(String[] args) {
         try {
             // 1. Iniciar o Servidor e definir a porta de escuta (ex: 9999)
-            // O ServerSocket fica aguardando pedidos de conexão de clientes
             ServerSocket servidorSocket = new ServerSocket(9999);
             System.out.println("Servidor iniciado. Aguardando conexão do cliente na porta 9999...");
 
@@ -42,7 +41,7 @@ public class Servidor {
                 // Verificar se a mensagem é o comando para encerrar
                 if (mensagemOriginal.equalsIgnoreCase("fim")) {
                     System.out.println("Cliente solicitou o encerramento da conexão.");
-                    break; // Sai do loop while
+                    break;
                 }
             }
 
