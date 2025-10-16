@@ -71,4 +71,4 @@ Conforme solicitado, foi realizado um teste de validação com o simulador **RSA
 * **Mensagem Original:** FIAP 2025
 * **Mensagem Criptografada (gerada pelo nosso programa):** 185 99 12 207 223 84 250 84 287
 
-**(Adicione aqui o print da tela do simulador da Drexel University)**
+![Tela do Cliente em Execução](https://raw.githubusercontent.com/ArthurBispo00/CP5-PART1-Server/master/imagem_tela_drexel.png)
